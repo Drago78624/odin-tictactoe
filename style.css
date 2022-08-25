@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.ttt-box {
+    cursor: pointer;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}

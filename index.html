@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div
+      class="wrapper min-h-screen flex justify-center items-center bg-red-200"
+    >
+      <div
+        class="score-container fixed top-10 right-10 bg-white rounded py-5 px-10 text-xl"
+      >
+        <p class="player-1-score">
+          <strong> Player 1</strong> : <span class="score1">0</span>
+        </p>
+        <p class="player-2-score">
+          <strong> Player 2</strong> : <span class="score2">0</span>
+        </p>
+      </div>
+      <div
+        class="overlay w-full h-[100vh] justify-center items-center fixed hidden"
+      >
+        <div class="modal p-10 bg-white rounded-md text-center">
+          <p class="text-4xl mb-5 win">
+            Player <span class="winning-player"></span> Wins !
+          </p>
+          <p class="draw text-4xl mb-5 hidden">Match Draws !</p>
+          <button
+            class="playagain-btn bg-red-500 text-white p-2 rounded hover:bg-red-600 transiton-colors"
+          >
+            Play Again
+          </button>
+        </div>
+      </div>
+      <div class="ttt-container">
+        <h1 class="ttt-header text-3xl font-semibold mb-5 text-center">
+          Play Tic Tac Toe
+        </h1>
+        <div class="ttt-player-status text-center text-lg mb-5">
+          Player <span class="player font-bold">1</span>'s turn
+        </div>
+        <div class="ttt-board">
+          <div class="ttt-box-container flex">
+            <div
+              class="ttt-box-1 ttt-box w-32 h-32 text-8xl flex justify-center items-center hover:bg-red-400 transition-colors bg-red-300 border-2 border-r-red-900 border-b-red-900"
+            ></div>
+            <div
+              class="ttt-box-2 ttt-box w-32 h-32 text-8xl flex justify-center items-center hover:bg-red-400 transition-colors bg-red-300 border-2 border-l-red-900 border-r-red-900 border-b-red-900"
+            ></div>
+            <div
+              class="ttt-box-3 ttt-box w-32 h-32 text-8xl flex justify-center items-center hover:bg-red-400 transition-colors bg-red-300 border-2 border-l-red-900 border-b-red-900"
+            ></div>
+          </div>
+          <div class="ttt-box-container flex">
+            <div
+              class="ttt-box-4 ttt-box w-32 h-32 text-8xl flex justify-center items-center hover:bg-red-400 transition-colors bg-red-300 border-2 border-t-red-900 border-b-red-900 border-r-red-900"
+            ></div>
+            <div
+              class="ttt-box-5 ttt-box w-32 h-32 text-8xl flex justify-center items-center hover:bg-red-400 transition-colors bg-red-300 border-2 border-red-900"
+            ></div>
+            <div
+              class="ttt-box-6 ttt-box w-32 h-32 text-8xl flex justify-center items-center hover:bg-red-400 transition-colors bg-red-300 border-2 border-t-red-900 border-l-red-900 border-b-red-900"
+            ></div>
+          </div>
+          <div class="ttt-box-container flex">
+            <div
+              class="ttt-box-7 ttt-box w-32 h-32 text-8xl flex justify-center items-center hover:bg-red-400 transition-colors bg-red-300 border-2 border-r-red-900 border-t-red-900"
+            ></div>
+            <div
+              class="ttt-box-8 ttt-box w-32 h-32 text-8xl flex justify-center items-center hover:bg-red-400 transition-colors bg-red-300 border-2 border-t-red-900 border-r-red-900 border-l-red-900"
+            ></div>
+            <div
+              class="ttt-box-9 ttt-box w-32 h-32 text-8xl flex justify-center items-center hover:bg-red-400 transition-colors bg-red-300 border-2 border-t-red-900 border-l-red-900"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
