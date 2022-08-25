@@ -19,7 +19,7 @@ const playerOne = Player("Player 1", "X")
 const playerTwo = Player("Player 2", "O")
 
 const GameBoard = (() => {
-  let gameboard = ["X", "", "", "", "", "", "", "", ""];
+  let gameboard = ["", "", "", "", "", "", "", "", ""];
   let sign = playerOne.getMarker();
   return {gameboard, sign}
 })();
